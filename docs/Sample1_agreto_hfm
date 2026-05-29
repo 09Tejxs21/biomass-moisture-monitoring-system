@@ -1,0 +1,15 @@
+1. Controlling Bulk DensityBiomass like paddy straw or wood chips is "fluffy." If you measure a loose pile of straw, it’s mostly air. If you pack it down, it’s mostly straw.
+
+The Problem:
+The Agreto HFM II probe and your NIR/IR sensors are affected by how many particles are packed into their field of view.
+
+The Solution:
+By using a fixed 10L volume, you can weigh the bucket to calculate the density ($\rho = \text{mass} / 10\text{L}$).
+This allows you to say: "At a density of $X$, this moisture reading is $Y$." 
+Without the bucket, your data will be "noisy" because the density changes every time you move the straw.
+
+2. The Agreto Probe’s "Compression Requirement"The Agreto HFM II is a conductivity/capacitance probe. For it to work, the biomass must be in tight contact with the metal tip of the 50cm probe.If you stick the probe into a loose pile, there are air gaps between the straw and the sensor, leading to a falsely low moisture reading.
+In a 10L bucket, you can compress the material consistently (e.g., "compress until the bucket is full") to ensure the probe is surrounded by a dense, uniform sample.
+
+3. Creating a "Uniform Surface" for your SensorsYour MLX90614 and NIR sensors need a flat, consistent surface to look at.In a 10L bucket, the top surface of the biomass can be leveled off.This keeps the Distance (Z-axis) between your ESP32 board and the biomass constant. As we discussed earlier, if the distance changes, the light intensity changes, which ruins your calibration.
+Representative SamplingA handful of straw might be unusually wet or dry. A 10L sample is large enough to be "statistically representative" of the entire truckload or batch provided by the startup.
