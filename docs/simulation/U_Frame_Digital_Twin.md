@@ -79,7 +79,7 @@ based on:
 
 ## Current Simulation Output
 
-![U Frame Simulation](../../assets/U_Frame_Model.png)
+![U Frame Simulation](docs/simulation/U_Frame_Model.png)
 
 ---
 
