@@ -32,11 +32,11 @@ Multiple distributed sensing units are intended to be mounted across an industri
 
 # Current Development Status
 - [x] Repository initialized
-- [ ] ESP32 environment setup
-- [ ] I2C communication validation
-- [ ] Sensor acquisition
+- [x] ESP32 environment setup
+- [x] I2C communication validation
+- [x] Sensor acquisition
 - [ ] Breadboard prototype
-- [ ] RS485 integration
+- [x] RS485 integration
 - [ ] Industrial enclosure planning
 
 ---
